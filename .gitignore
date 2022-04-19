@@ -7,7 +7,7 @@ dist
 
 # linting and formatting
 .eslint*
-.prettierrc
+.prettierrc*
 
 # test files
 scratch.ts
