@@ -1,4 +1,4 @@
-import { GameObject } from '../../src/game_object/game_object'
+import { GameObject } from '../game_object/game_object'
 
 export class Character extends GameObject {
     // attributes
