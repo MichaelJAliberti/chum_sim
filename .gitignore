@@ -2,5 +2,9 @@
 node_modules
 package-lock.json
 
-# linting
+# linting and formatting
 .eslint*
+.prettierrc
+
+# test files
+scratch.ts
