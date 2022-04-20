@@ -24,10 +24,11 @@
     },
     "scripts": {
         "build": "tsc",
-        "package": "cp -r src/gui/* dist/controller",
+        "clear": "rm -r dist/",
+        "package": "cp -r src/frontend/templates dist/frontend/templates && cp -r src/frontend/styles dist/frontend/styles",
         "watch": "tsc -w",
         "lint": "eslint -c .eslintrc --ext .ts ./src",
-        "start": "npm run build && npm run package && electron ./dist/controller/main.js",
+        "start": "npm run clear && npm run build && npm run package && electron ./dist/frontend/scripts/main.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel=¨stylesheet¨ type=¨text/css¨ href=¨../styles/index.css¨>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+  </head>
+
+  <body>
+    <h2>Tabs</h2>
+
+    <div class="tab">
+        <button class="tablinks" id="defaultOpen">London</button>
+        <button class="tablinks">Paris</button>
+        <button class="tablinks">Tokyo</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="../scripts/renderer.js"></script>
+  </body>
+</html>

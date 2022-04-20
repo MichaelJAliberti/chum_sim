@@ -4,18 +4,21 @@ import * as path from 'path'
 function createWindow() {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
-        height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
-        width: 800,
+        show: false,
     })
 
     // and load the index.html of the app.
-    mainWindow.loadFile(path.join(__dirname, '../../index.html'))
+    mainWindow.loadFile(path.join(__dirname, '../templates/index.html'))
+    console.log(__dirname)
 
     // COMMENT OUT FOR RELEASE
     mainWindow.webContents.openDevTools()
+
+    mainWindow.maximize()
+    mainWindow.show()
 }
 
 // This method will be called when Electron has finished
