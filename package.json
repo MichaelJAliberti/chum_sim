@@ -24,9 +24,10 @@
     },
     "scripts": {
         "build": "tsc",
+        "package": "cp -r src/gui/* dist/controller",
         "watch": "tsc -w",
         "lint": "eslint -c .eslintrc --ext .ts ./src",
-        "start": "npm run build && electron ./dist/electron/main.js",
+        "start": "npm run build && npm run package && electron ./dist/controller/main.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
