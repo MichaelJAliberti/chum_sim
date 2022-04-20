@@ -1,4 +1,6 @@
 body {font-family: Arial;}
+
+h2 {color: blueviolet;}
     
 /* Style the tab */
 .tab {
@@ -9,7 +11,7 @@ body {font-family: Arial;}
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: red;
+    /* background-color: red; */
     float: left;
     border: none;
     outline: none;
@@ -37,11 +39,11 @@ body {font-family: Arial;}
     border-top: none;
 }
 
-/* Style the close button */
+/* Style the close button
 .topright {
     float: right;
     cursor: pointer;
     font-size: 28px;
-}
+} */
 
-.topright:hover {color: red;}
+/* .topright:hover {color: red;} */

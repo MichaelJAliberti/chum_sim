@@ -14,4 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
             process.versions[type as keyof NodeJS.ProcessVersions]
         )
     }
+
+    replaceText(`path`, window.location.toString())
 })
