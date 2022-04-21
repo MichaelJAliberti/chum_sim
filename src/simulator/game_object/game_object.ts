@@ -1,4 +1,4 @@
-import { Point } from '../../src/movement/point'
+import { Point } from '../movement/point'
 
 export class GameObject {
     location: Point

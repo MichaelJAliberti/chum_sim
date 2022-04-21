@@ -1,13 +1,8 @@
 # packages
 node_modules
-package-lock.json
 
 # distribution
 dist
-
-# linting and formatting
-.eslint*
-.prettierrc*
 
 # test files
 scratch.ts

@@ -24,9 +24,11 @@
     },
     "scripts": {
         "build": "tsc",
+        "clear": "rm -r dist/",
+        "package": "cd src/frontend && ls | grep -v 'scripts' | xargs cp -r -t ../../dist/frontend/ && cd ../..",
         "watch": "tsc -w",
         "lint": "eslint -c .eslintrc --ext .ts ./src",
-        "start": "npm run build && electron ./dist/main.js",
+        "start": "npm run clear && npm run build && npm run package && electron ./dist/frontend/scripts/main.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
