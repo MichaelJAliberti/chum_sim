@@ -1,5 +1,15 @@
 # Changelog
 
+## [2022.4.21 - Branding]
+
+### Added
+
+-   `src/frontend/images/favicon.ico` serves as app icon
+
+### Changed
+
+-   `README.md` now contains basic info
+
 ## [2022.4.21 - Electron Setup]
 
 ### Added
