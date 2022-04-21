@@ -6,6 +6,7 @@ function createWindow() {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        icon: path.join(__dirname, '../images/favicon.ico'),
         show: false,
     })
 
