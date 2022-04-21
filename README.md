@@ -29,3 +29,7 @@ Once installation is complete, start the program by running
 ```
 npm start
 ```
+
+## APIs
+
+Chum Sim stores character data in a remote REST API, which in-turn uses a MongoDB backend. This allows users to view and retrieve other users' characters.
