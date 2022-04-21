@@ -25,7 +25,7 @@
     "scripts": {
         "build": "tsc",
         "clear": "rm -r dist/",
-        "package": "cp -r src/frontend/templates dist/frontend/templates && cp -r src/frontend/styles dist/frontend/styles",
+        "package": "cd src/frontend && ls | grep -v 'scripts' | xargs cp -r -t ../../dist/frontend/ && cd ../..",
         "watch": "tsc -w",
         "lint": "eslint -c .eslintrc --ext .ts ./src",
         "start": "npm run clear && npm run build && npm run package && electron ./dist/frontend/scripts/main.js",

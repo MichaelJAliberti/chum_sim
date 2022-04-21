@@ -8,11 +8,12 @@
 function openCity(cityName: string) {
     let i, tabcontent, tablinks
 
-    console.log('Still Alive')
+    console.log(cityName)
 
     tabcontent = document.querySelectorAll<HTMLElement>('tabcontent')
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = 'none'
+        console.log(tabcontent[i].textContent)
     }
 
     tablinks = document.getElementsByClassName('tablinks')
@@ -26,7 +27,7 @@ function openCity(cityName: string) {
 const tablinks = document.getElementsByClassName('tablinks')
 for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].addEventListener('click', () => {
-        openCity('London')
+        openCity(tablinks[i].textContent)
     })
 }
 

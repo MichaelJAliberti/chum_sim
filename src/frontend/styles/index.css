@@ -1,7 +1,12 @@
-/* @font-face {
-    font-family: rexlia;
-    src: url('../fonts/rexlia/rexlia_rg.otf') format('opentype');
-} */
+@font-face {
+    font-family: asul;
+    src: url('../fonts/asul/Asul-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url('../fonts/orbitron/Orbitron-Regular.ttf') format('truetype');
+}
 
 @font-face {
     font-family: ubuntu;
@@ -20,11 +25,14 @@
 }
 
 body {
-    font-family: ubuntu, rexlia;
+    font-family: ubuntu;
     background-color: var(--sr_back_white);
 }
 
-h2 {color: var(--sr_red);}
+h2 {
+    font-family: orbitron;
+    color: var(--sr_red);
+}
 
 .tab {
     overflow: hidden;
