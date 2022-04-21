@@ -4,9 +4,5 @@ node_modules
 # distribution
 dist
 
-# linting and formatting
-.eslint*
-.prettierrc*
-
 # test files
 scratch.ts
