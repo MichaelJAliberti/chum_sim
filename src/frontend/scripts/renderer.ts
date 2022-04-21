@@ -5,29 +5,27 @@
 // Use preload.js to selectively enable features
 // needed in the renderer process.
 
-function openCity(cityName: string) {
-    let i, tabcontent, tablinks
+function showTab(tabName: string) {
+    let tabcontent_array: NodeListOf<HTMLElement>,
+        tablinks_array: NodeListOf<HTMLElement>
 
-    console.log(cityName)
+    tabcontent_array = document.querySelectorAll<HTMLElement>('div.tabcontent')
+    tabcontent_array.forEach((tabcontent) => {
+        tabcontent.style.display = 'none'
+    })
 
-    tabcontent = document.querySelectorAll<HTMLElement>('tabcontent')
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = 'none'
-        console.log(tabcontent[i].textContent)
-    }
+    tablinks_array = document.querySelectorAll<HTMLElement>('div.tablinks')
+    tablinks_array.forEach((tablink) => {
+        tablink.className = tablink.className.replace(' active', '')
+    })
 
-    tablinks = document.getElementsByClassName('tablinks')
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(' active', '')
-    }
-
-    document.getElementById(cityName).style.display = 'block'
+    document.getElementById(tabName).style.display = 'block'
 }
 
 const tablinks = document.getElementsByClassName('tablinks')
 for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].addEventListener('click', () => {
-        openCity(tablinks[i].textContent)
+        showTab(tablinks[i].textContent)
     })
 }
 

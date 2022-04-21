@@ -32,6 +32,15 @@ body {
 h2 {
     font-family: orbitron;
     color: var(--sr_red);
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#title_break {
+    height: 2px;
+    color: var(--sr_red);
+    background-color: var(--sr_red);
 }
 
 .tab {
@@ -49,7 +58,9 @@ h2 {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+
+    font-family: orbitron;
+    font-size: 24px;
 }
 .tab button:hover {
     background-color: var(--sr_table_grey);
@@ -66,12 +77,3 @@ h2 {
     border-top: none;
     color: var(--sr_text_white);
 }
-
-/* Style the close button
-.topright {
-    float: right;
-    cursor: pointer;
-    font-size: 28px;
-} */
-
-/* .topright:hover {color: red;} */
