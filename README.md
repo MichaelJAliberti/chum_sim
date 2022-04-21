@@ -1,4 +1,6 @@
-<p text-align="center"><h1>Chum Sim</h1></p>
+# Chum Sim
+
+<p align="center"><img src="src/frontend/images/favicon.ico"></p>
 
 Chum Sim is a Shadowrun management tool inspired by [Chummer 5](https://github.com/chummer5a/chummer5a).
 
