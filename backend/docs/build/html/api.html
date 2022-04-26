@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>api package &mdash; HealthcareApp  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="api" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> HealthcareApp
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">api</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">api package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-api.error_handling">api.error_handling module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-api.resource_factory">api.resource_factory module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-api.restful_service">api.restful_service module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-api.utils">api.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-api">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HealthcareApp</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">api</a> &raquo;</li>
+      <li>api package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-package">
+<h1>api package<a class="headerlink" href="#api-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-api.error_handling">
+<span id="api-error-handling-module"></span><h2>api.error_handling module<a class="headerlink" href="#module-api.error_handling" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="api.error_handling.abort_if_does_not_exist">
+<span class="sig-prename descclassname"><span class="pre">api.error_handling.</span></span><span class="sig-name descname"><span class="pre">abort_if_does_not_exist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.error_handling.abort_if_does_not_exist" title="Permalink to this definition"></a></dt>
+<dd><p>throws a curl status error if a given key does not exist in a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> (<em>str</em>) – key into data</p></li>
+<li><p><strong>data</strong> (<em>dict</em>) – dictionary of api data</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.error_handling.abort_if_operation_unsupported">
+<span class="sig-prename descclassname"><span class="pre">api.error_handling.</span></span><span class="sig-name descname"><span class="pre">abort_if_operation_unsupported</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">operation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.error_handling.abort_if_operation_unsupported" title="Permalink to this definition"></a></dt>
+<dd><p>throws a curl status error if a given operation cannot be applied to the calling
+resource</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>operation</strong> (<em>str</em>) – curl operation name</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – url path to the calling resource</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-api.resource_factory">
+<span id="api-resource-factory-module"></span><h2>api.resource_factory module<a class="headerlink" href="#module-api.resource_factory" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="api.resource_factory.ResourceFactory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">api.resource_factory.</span></span><span class="sig-name descname"><span class="pre">ResourceFactory</span></span><a class="headerlink" href="#api.resource_factory.ResourceFactory" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="api.resource_factory.ResourceFactory.make_resources">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">make_resources</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.resource_factory.ResourceFactory.make_resources" title="Permalink to this definition"></a></dt>
+<dd><p>generates resources based on template_data and returns them</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template_data</strong> (<em>dict</em>) – data to convert into resources</p></li>
+<li><p><strong>required_fields</strong> (<em>dict</em>) – fields required for POST requests</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of dictionaries of resource classes and urls</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.resource_factory.make_dict_layer_resource">
+<span class="sig-prename descclassname"><span class="pre">api.resource_factory.</span></span><span class="sig-name descname"><span class="pre">make_dict_layer_resource</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resources</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_fields</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.resource_factory.make_dict_layer_resource" title="Permalink to this definition"></a></dt>
+<dd><p>generates resource for a dictionary layer in template_data, then calls
+make_resources_per_layer to continue generating resources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template_data</strong> (<em>dict</em>) – data to convert into resources</p></li>
+<li><p><strong>data</strong> (<em>dict</em>) – full data dictonary</p></li>
+<li><p><strong>resources</strong> (<em>list</em>) – list of resources to append to</p></li>
+<li><p><strong>key_chain</strong> (<em>list</em>) – chain of keys so far to form url path for resource</p></li>
+<li><p><strong>required_fields</strong> (<em>dict</em>) – fields required for POST requests</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.resource_factory.make_list_layer_resource">
+<span class="sig-prename descclassname"><span class="pre">api.resource_factory.</span></span><span class="sig-name descname"><span class="pre">make_list_layer_resource</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resources</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_fields</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.resource_factory.make_list_layer_resource" title="Permalink to this definition"></a></dt>
+<dd><p>generates resource for a list layer in template_data, then calls
+make_resources_per_layer to continue generating resources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template_data</strong> (<em>list</em>) – data to convert into a resource</p></li>
+<li><p><strong>data</strong> (<em>dict</em>) – full data dictonary for the api</p></li>
+<li><p><strong>resources</strong> (<em>list</em>) – list of resources to append to</p></li>
+<li><p><strong>key_chain</strong> (<em>list</em>) – chain of keys so far to form url path for resource</p></li>
+<li><p><strong>required_fields</strong> (<em>dict</em>) – fields required for POST requests</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api.resource_factory.make_resources_per_layer">
+<span class="sig-prename descclassname"><span class="pre">api.resource_factory.</span></span><span class="sig-name descname"><span class="pre">make_resources_per_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resources</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_chain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.resource_factory.make_resources_per_layer" title="Permalink to this definition"></a></dt>
+<dd><p>recursively generates resources by parsing template_data and appends them
+to resources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>template_data</strong> (<em>dict</em>) – data to convert into resources</p></li>
+<li><p><strong>data</strong> (<em>dict</em>) – full data dictonary for the api</p></li>
+<li><p><strong>resources</strong> (<em>list</em>) – list of resources to append to</p></li>
+<li><p><strong>key_chain</strong> (<em>list</em>) – chain of keys so far to form url path for resource</p></li>
+<li><p><strong>required_fields</strong> (<em>dict</em>) – fields required for POST requests</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-api.restful_service">
+<span id="api-restful-service-module"></span><h2>api.restful_service module<a class="headerlink" href="#module-api.restful_service" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="api.restful_service.RESTService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">api.restful_service.</span></span><span class="sig-name descname"><span class="pre">RESTService</span></span><a class="headerlink" href="#api.restful_service.RESTService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="api.restful_service.RESTService.build_from_resources">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">build_from_resources</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.restful_service.RESTService.build_from_resources" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="api.restful_service.RESTService.build_from_templates">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">build_from_templates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.restful_service.RESTService.build_from_templates" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-api.utils">
+<span id="api-utils-module"></span><h2>api.utils module<a class="headerlink" href="#module-api.utils" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="api.utils.copy_class_def">
+<span class="sig-prename descclassname"><span class="pre">api.utils.</span></span><span class="sig-name descname"><span class="pre">copy_class_def</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_def</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api.utils.copy_class_def" title="Permalink to this definition"></a></dt>
+<dd><p>creates a new class definition that copies clas_def</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – name for new class</p></li>
+<li><p><strong>class_def</strong> (<em>type</em>) – the original class definition</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a copy of class_def with a new name</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>type</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-api">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-api" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="api" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, MichaelAliberti.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -6,3 +6,10 @@ dist
 
 # test files
 scratch.ts
+
+# python
+docs/build
+__pycache__/
+
+# misc
+.vscode/
