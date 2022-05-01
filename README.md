@@ -6,6 +6,12 @@
 [![GitHub Issues](https://img.shields.io/github/issues/MichaelJAliberti/chum_sim.svg)](https://github.com/MichaelJAliberti/chum_sim/issues)
 [![License](https://img.shields.io/github/license/MichaelJAliberti/chum_sim)](https://opensource.org/licenses/MIT)
 
+## NOTE: Migration
+
+To encapsulate the frontend and backend of this project, Chum Sim has been migrated to the [TabletopSheets Organization](https://github.com/TabletopSheets). You can find the continuations of this specfic repository [here](https://github.com/TabletopSheets/chum_sim).
+
+## Description
+
 Chum Sim is a Shadowrun management tool inspired by [Chummer 5](https://github.com/chummer5a/chummer5a).
 
 Chum Sim allows users to create new characters, modify existing characters, and run simulations between characters in order to asses the quality of combat encounters. Chum Sim also allows users to make dice rolls digitally, streamlining gameplay at the table.
