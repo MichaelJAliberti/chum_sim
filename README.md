@@ -12,6 +12,8 @@ Chum Sim is a Shadowrun management tool inspired by [Chummer 5](https://github.c
 
 Chum Sim allows users to create new characters, modify existing characters, and run simulations between characters in order to asses the quality of combat encounters. Chum Sim also allows users to make dice rolls digitally, streamlining gameplay at the table.
 
+The backend code for this program may be found [here](https://github.com/MichaelJAliberti/chum_sim_backend).
+
 ## Installation
 
 Before starting, make sure you have [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/) installed.
