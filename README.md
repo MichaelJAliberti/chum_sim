@@ -1,6 +1,6 @@
 # Chum Sim
 
-<p align="center"><img src="src/frontend/images/favicon.ico"></p>
+<p align="center"><img src="public/images/favicon.ico"></p>
 
 [![Github Latest Release Date](https://img.shields.io/github/release-date/MichaelJAliberti/chum_sim?label=Latest%20Milestone%20Release)](https://github.com/MichaelJAliberti/chum_sim/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/MichaelJAliberti/chum_sim.svg)](https://github.com/MichaelJAliberti/chum_sim/issues)

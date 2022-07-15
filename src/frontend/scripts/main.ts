@@ -6,11 +6,11 @@ function createWindow() {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
-        icon: path.join(__dirname, '../images/favicon.ico'),
+        icon: path.join(__dirname, '../../../public/images/favicon.ico'),  
         show: false,
     })
 
-    mainWindow.loadFile(path.join(__dirname, '../templates/index.html'))
+    mainWindow.loadFile(path.join(__dirname, '../../../public/templates/index.html'))
     console.log(__dirname)
 
     // COMMENT OUT FOR RELEASE
