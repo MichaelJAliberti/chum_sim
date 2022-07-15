@@ -7,11 +7,15 @@
         "eslint-plugin-jest": "^26.1.1",
         "jest": "^27.5.1",
         "prettier": "^2.5.1",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
         "ts-node": "^10.7.0",
         "typescript": "^4.6.2"
     },
     "devDependencies": {
         "@types/jest": "^27.4.1",
+        "@types/react": "^18.0.12",
+        "@types/react-dom": "^18.0.5",
         "@typescript-eslint/eslint-plugin": "^5.14.0",
         "@typescript-eslint/parser": "^5.14.0",
         "electron": "^18.0.4",
@@ -24,7 +28,7 @@
     },
     "scripts": {
         "build": "tsc",
-        "clear": "rm -r dist/",
+        "clear": "rm -rf dist/",
         "package": "cd src/frontend && ls | grep -v 'scripts' | xargs cp -r -t ../../dist/frontend/ && cd ../..",
         "watch": "tsc -w",
         "lint": "eslint -c .eslintrc --ext .ts ./src",
